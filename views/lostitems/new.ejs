@@ -1,0 +1,64 @@
+<% layout('layouts/boilerplate')%>
+<div class="row">
+    <h1 class="text-center">New Lostitem</h1>
+    <div class="col-6 offset-3">
+        <form action="/lostitems" method="POST" novalidate class="validated-form" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label class="form-label" for="title">Title</label>
+                <input class="form-control" type="text" id="title" name="lostitem[title]" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="location">Location</label>
+                <input class="form-control" type="text" id="location" name="lostitem[location]" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+
+            <!-- <div class="mb-3">
+                <label class="form-label" for="image">Image Url</label>
+                <input class="form-control" type="text" id="image" name="lostitem[image]" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div> -->
+            <div class="mb-3">
+                <label class="form-label" for="email">Contact Email</label>
+                <div class="input-group">
+                    <span class="input-group-text" id="email-label"></span>
+                    <input type="email" class="form-control" id="email" placeholder="your email address" aria-label="email"
+                        aria-describedby="email-label" name="lostitem[email]" required>
+                </div>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="description">Description</label>
+                <textarea class="form-control" type="text" id="description" name="lostitem[description]"
+                    required></textarea>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="">Upload Images</label>
+                <div class="form-file custom-file">
+                    <input type="file" accept="image/*" class="form-file-input" name="image" id="image" capture="environment" multiple="multiple">
+                    <label class="form-file-label" for="image">
+                        <span class="form-file-text custom-file-label">Choose image(s)...</span>
+                        <span class="form-file-button">Browse</span>
+                    </label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-success">Add LostItem</button>
+            </div>
+        </form>
+        <a href="/lostitems">All LostItems</a>
+    </div>
+</div>
