@@ -11,18 +11,18 @@
 </head>
 
 <body class="d-flex text-center text-white bg-dark">
-    <div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <header class="mb-auto">
             <div>
-                <h3 class="float-md-start mb-0">Lost & Found</h3>
-                <nav class="nav nav-masthead mt-2 justify-content-center float-md-end">
+                <h3 class="float-md-left mb-0">Lost & Found</h3>
+                <nav class="nav nav-masthead justify-content-center float-md-right">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                     <a class="nav-link" href="/lostitems">LostItems</a>
                     <% if(!currentUser) { %>
                     <a class="nav-link" href="/login">Login</a>
                     <a class="nav-link" href="/register">Register</a>
                     <% } else { %>
-                    <a class="nav-link" href="/lostitems/new">AddItem</a>
+                    <a class="nav-link" href="/lostitems/new">Add LostItem</a>
                     <a class="nav-link" href="/logout">Logout</a>
                     <% } %>
                 </nav>
@@ -32,8 +32,8 @@
             <h1>Lost & Found</h1>
             <p class="lead"> Welcome to Lost & Found! <br> Jump right in and checkout if your lostitem is here. <br>
                 Or publish the lostitem you found. Feel free to contact with others!</p>
-            <a href="/lostitems" class="btn btn-secondary my-2 border-white bg-white">View LostItems</a>
-            <a href="/lostitems/new" class="btn btn-secondary my-2 border-white bg-white">Add an Item</a>
+            <a href="/lostitems" class="btn btn-lg btn-secondary font-weight-bold border-white bg-white">View LostItems</a>
+            <a href="/lostitems/new" class="btn btn-lg btn-secondary font-weight-bold border-white bg-white">Publish an Item</a>
         </main>
 
         <footer class="mt-auto text-white-50">

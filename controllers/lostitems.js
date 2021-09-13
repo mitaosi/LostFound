@@ -1,9 +1,9 @@
 const Lostitem = require('../models/lostitem');
 const mbxGeocoding = require("@mapbox/mapbox-sdk/services/geocoding");
 const mapBoxToken = process.env.MAPBOX_TOKEN;
+const googleApiKey = process.env.GOOGLE_APIKEY;
 const geocoder = mbxGeocoding({ accessToken: mapBoxToken });
 const { cloudinary } = require("../cloudinary");
-
 
 module.exports.index = async (req, res) => {
     const lostitems = await Lostitem.find({});
