@@ -12,11 +12,9 @@
             </div>
             <div class="mb-3">
                 <label class="form-label" for="location">Location: </label>
-                <button onclick="geoFindMe()"> Get coordinates </button>
                 <input class="form-control" type="text" id="location" placeholder="where did you found this item?" name="lostitem[location]" required>
-                <div id="coordinates">
-                    <div id="gps"></div>
-                </div>
+                <button type="button" onclick="geoFindMe()"> Get coordinates </button>
+                <div id="gps"></div>
                 <div class="valid-feedback">
                     Looks good!
                 </div>
@@ -52,7 +50,7 @@
                 </div>
             </div>
             <div class="mb-3 d-flex justify-content-center">
-                <button class="btn btn-success btn-lg">Add LostItem</button>
+                <button class="btn btn-success btn-lg" type="submit">Add LostItem</button>
             </div>
         </form>
         <a href="/lostitems">All LostItems</a>
