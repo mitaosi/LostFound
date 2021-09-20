@@ -12,10 +12,28 @@
                     Looks good!
                 </div>
             </div>
+            
+            <div class="mb-3">
+                <label class="form-label" for="title">Time</label>
+                <input class="form-control" type="datetime-local" id="time" name="lostitem[time]" 
+                    value="<%=lostitem.time %>" required/>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            
             <div class="mb-3">
                 <label class="form-label" for="location">Location</label>
                 <input class="form-control" type="text" id="location" name="lostitem[location]"
                     value="<%=lostitem.location %>" required>
+                <div class="row g-3 mt-1">
+                    <div class="col-auto">
+                        <button type="button" onclick="geoFindMe()" class="btn btn-primary mb-3">Set new coordinates</button>
+                    </div>
+                    <div class="col-7">
+                        <input type="text" class="form-control" id="gps" value="<%=lostitem.geometry.coordinates %>">
+                    </div>
+                </div>    
                 <div class="valid-feedback">
                     Looks good!
                 </div>

@@ -26,6 +26,7 @@ const Joi = BaseJoi.extend(extension)
 module.exports.lostitemSchema = Joi.object({
     lostitem: Joi.object({
         title: Joi.string().required().escapeHTML(),
+        time: Joi.string().required().escapeHTML(),
         email: Joi.string().required().email(),
         location: Joi.string().required().escapeHTML(),
         description: Joi.string().required().escapeHTML()

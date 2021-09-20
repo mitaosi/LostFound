@@ -10,11 +10,27 @@
                     Looks good!
                 </div>
             </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="title">Time</label>
+                <input class="form-control" type="datetime-local" id="time" name="lostitem[time]" />
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+
             <div class="mb-3">
                 <label class="form-label" for="location">Location: </label>
                 <input class="form-control" type="text" id="location" placeholder="where did you found this item?" name="lostitem[location]" required>
-                <button type="button" onclick="geoFindMe()"> Get coordinates </button>
-                <div id="gps"></div>
+
+                <div class="row g-3 mt-1">
+                    <div class="col-auto">
+                        <button type="button" onclick="geoFindMe()" class="btn btn-primary mb-3">Get coordinates</button>
+                    </div>
+                    <div class="col-7">
+                      <input type="text" class="form-control" id="gps" placeholder="current location coordinates (optional)">
+                    </div>
+                </div>
                 <div class="valid-feedback">
                     Looks good!
                 </div>

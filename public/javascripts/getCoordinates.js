@@ -9,13 +9,13 @@ function geoFindMe() {
   function success(position) {
     var latitude = position.coords.latitude;
     var longitude = position.coords.longitude;
-    output.innerHTML =
-      "<p>Latitude is " +
-      latitude +
-      "° Longitude is " +
-      longitude +
-      "° </p>";
-    //location.value = [latitude, longitude];
+    // output.innerHTML =
+    //   "<p>Latitude is " +
+    //   latitude +
+    //   "° Longitude is " +
+    //   longitude +
+    //   "° </p>";
+    output.value = [latitude, longitude];
     //console.log(location.value);
   }
 

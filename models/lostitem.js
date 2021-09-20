@@ -28,6 +28,7 @@ const LostitemSchema = new Schema({
             required: true
         }
     },
+    time: String,
     email: String,
     description: String,
     location: String,
