@@ -1,7 +1,7 @@
 body {
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://res.cloudinary.com/dlmdkf5dw/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1630486884/samples/Goteborg-sparvagn-iStock-495376272_pnshpp.jpg");
+    url("https://www.liffhappens.com/wp-content/uploads/2019/04/Coachella-Postcard-Front-1024x696.png");
     background-size: cover;
     background-position: center;
     text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);

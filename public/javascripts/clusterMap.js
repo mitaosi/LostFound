@@ -118,7 +118,9 @@ map.on('load', function () {
 
         new mapboxgl.Popup()
             .setLngLat(coordinates)
-            .setHTML(popUpMarkup)
+            .setHTML(
+                popUpMarkup
+                )
             .addTo(map);
     });
 

@@ -32,10 +32,9 @@
                 <p class="card-text"><%= lostitem.description%></p>
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">Found time: <%= lostitem.time%></li>
                 <li class="list-group-item">Locaition: <%= lostitem.location%></li>
                 <li class="list-group-item">Found by <%= lostitem.author.username%></li>
-                <li class="list-group-item">Contact with <a href="<%= lostitem.email%>"><%= lostitem.email%></a></li>
+                <li class="list-group-item">Contact: <a href="<%= lostitem.email%>"><%= lostitem.email%></a></li>
             </ul>
             <%  if( currentUser && lostitem.author.equals(currentUser._id))  {%>
             <div class="card-body">
@@ -46,7 +45,7 @@
             </div>
             <% } %>
             <div class="card-footer text-muted">
-                2 days ago
+                Found time: <%= lostitem.time? lostitem.time:"unknown"%>
             </div>
         </div>
 
